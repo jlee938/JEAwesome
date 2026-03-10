@@ -1,0 +1,18 @@
+**Team**: Joyce will be responsible for importing and combining the two datasets. Eric will work on cleaning the data. Together, we will work on all statistical analyses and visualizations necessary to answer our questions. If there are any questions, Joyce will be responsible for communicating with professors and TAs. Overall, this will be a collaborative process, and both members will help each other out with their responsibilities. 
+
+**Research** **Questions**: The research question that we hope to answer is “How do income levels of individuals in Chicago impact the number of grocery stores present in the area?”
+
+**Datasets**: As mentioned above, our first dataset is from the US Census Bureau. We chose to specifically look at the Chicagoland area to gain a better understanding of a major city that we plan to work in. The census data contains demographic information about the people living in Chicago. This includes, but is not limited to, age, race, housing, education, health, and income. The Grocery Store Status data gives detailed information on the grocery stores present in Chicago, including it’s name, location, zipcode, and when it was last updated.
+
+**Timeline**:
+We hope to have our dataset integrated and cleaned by 3/27. Joyce will be responsible for combining the two datasets. Eric will primarily be responsible for data cleaning by standardizing the variables, filling in missing data, and dealing with outliers. Joyce will make sure that variable types are correct and ready for analysis. The initial exploratory analysis of the data will be completed by 3/30. Joyce and Eric will look at the structure of the data and identify any patterns. This will be accomplished by grouping different variables together or creating basic visualizations to gain a deeper understanding of our data. We will then use this data to create the status report due on 3/31. Once the preliminary data analysis has been completed, Joyce and Eric hope to explore the dataset more in depth. By 4/8, Joyce will complete a detailed analysis of income trends, such as looking at which neighborhoods in Chicago have the highest income compared to which neighborhoods have the lowest income. Eric will complete a detailed analysis of grocery store density such as looking at the distance between grocery stores and comparing that to the median income in that area. We will then come together to share our findings. By 4/12, we hope to begin creating visualizations and complete comparative analysis. We will accomplish this by comparing both of our findings and utilizing critical findings to finalize our results. Two weeks before our final report is due, Joyce and Eric will review our findings to make sure everything is accurate. A week before our report is due, we will polish our findings and make it presentable by reviewing the rubric requirements. 
+
+**Gaps**:
+One gap that we identified is our limited knowledge of advanced data visualization techniques. Because our data deals with analyzing socioeconomic and geographic patterns, it will be valuable to present our data that is accessible to a wider audience. Visualizations can make it easier to identify key trends and relationships. Additionally, it can also enhance the impact that the data could have on the community. To address this gap, we would like guidance on how to create complex graphs such as density plots. This would strengthen our analysis and final presentation of our findings. 
+
+**Links**:
+- Chicago Census Data: https://data.census.gov/map?q=Income+by+Zip+code+tabulation+area&tid=ACSST5Y2024.S1902&layer=VT_2024_860_Z2_PY_D1&loc=41.7926,-87.5941,z10.0035
+- Grocery Store Data: https://data.cityofchicago.org/d/rish-pa6g
+
+
+
