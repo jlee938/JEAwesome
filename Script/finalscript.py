@@ -71,7 +71,7 @@ income_group_df
 
 import os
 
-Artifacts = "artifacts"
+Artifacts = "JEAwesome/artifacts"
 os.makedirs(Artifacts, exist_ok=True)
 
 graph1 = "income_distribution.png"
