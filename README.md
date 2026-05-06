@@ -30,6 +30,8 @@ Eric:
 
 ## Summary
 
+This project aims to examine whether lower-income neighborhoods in Chicago have reduced access to grocery stores compared to higher-income areas. By asking “How do income levels of individuals in Chicago impact the number of grocery stores present in the area?”, we hoped to see the relationship between median household income within neighborhoods and the number of grocery stores people have access to. This topic is important to us because disparities in food access can increase food insecurity and even create disparities in health. We believe our analysis can further contribute to urban planning, health equity, and increased food access in a city where we plan to work. To further our investigation, we obtained a dataset of all Chicago groceries and the Chicago census data containing median household income levels. We cleaned and combined these two datasets based on zip code. We then counted the number of grocery stores under each zip code. Through our analysis, we found that there was no strong correlation between income levels in certain neighborhoods and the number of grocery stores people living in those areas have access to. However, we were able to gain valuable insight into the overall grocery landscape in Chicago and income distribution. 
+
 ## Data Profile
 **Grocery Store Dataset:**
 
@@ -126,18 +128,18 @@ Beyond the data analysis itself, the project presented several technical challen
 Reproduce this project using the following steps: 
 
 1. Clone the project repository in the terminal
-   *git clone https://github.com/jlee938/JEAwesome.git 
-   *cd JEAwesome
+    *git clone https://github.com/jlee938/JEAwesome.git 
+    *cd JEAwesome
 2. Make sure Python is installed and running
 3. Instal the required packages for the project. All the required packages are listed in /requirements.txt
-   */requirements.txt
+    */requirements.txt
 4. Check the OriginalDataset folder to ensure that the original files are in the folder.
-  *`/OriginalDataset/ChicagoZipMedian.csv`
+    *`/OriginalDataset/ChicagoZipMedian.csv`
 5. Run the full workflow using the command below
-   * '''python scrips/run_all.py'''
+    * ```python scrips/run_all.py```
 6. Ensure that the datasets are present in the FinalDataset folder
-   * `/FinalDataset/merged_df.csv`
-   * `/FinalDataset/number_of_stores_grouped_by_median.csv`
+    * `/FinalDataset/merged_df.csv`
+    * `/FinalDataset/number_of_stores_grouped_by_median.csv`
 
 ## Reference
 U.S. Census Bureau. Income by Zip Code Tabulation Area. American Community Survey 5-Year Estimates 
