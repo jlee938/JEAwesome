@@ -138,7 +138,7 @@ Reproduce this project using the following steps:
 4. Check the OriginalDataset folder to ensure that the original files are in the folder.
     * `/OriginalDataset/ChicagoZipMedian.csv`
 5. Run the full workflow using the command below.
-    * ```python scrips/run_all.py```
+    * ```python scripts/run_all.py```
 6. Ensure that the datasets are present in the FinalDataset folder.
     * `/FinalDataset/merged_df.csv`
     * `/FinalDataset/number_of_stores_grouped_by_median.csv`
