@@ -27,14 +27,26 @@ Eric:
 ## Summary
 
 ## Data Profile
-**Grocery Store Dataset**
+**Grocery Store Dataset:**
 
-**Census Dataset**:
+For this project, the grocery store dataset is a tabular dataset retrieved by an api and stored as a dataframe. The final cleaned dataset is stored in '/CleanedDataset/grocery_df_cleaned.csv'. This dataset contains key information about grocery stores in the Chicago land area and its operation status. 
+
+Each row in the dataset represents a grocery store. There are six main attributes of this dataset: 'Store Name', 'Address', 'Zip', 'New status', 'Last updated', and 'Location'. The 'New status' attribute contains whether the grocery store is 'OPEN', 'CLOSED', or only takes 'ONLINE ORDERS ONLY'. This shows how easily accessible the grocery store is. The 'Last updated' column lists the date the dataset was last updated in month, date, year format. Similar to the 'Address' column, the 'Location' column includes where the grocery store is located. However, it contains the location as geographic coordinates (latitude and longitude). 
+
+The grocery store data set comes from the Chicago Data Portal and is a public dataset that can be easily accessed. The data set is owned by the Office of Emergency Management & Communications and was last updated on 6/13/25. The dataset period covers only 2020. The dataset is not being updated anymore, but is being kept for historical reference. 
+
+The data set is ethical because there is no personal identifying information present in the data. However, it can be linked to other datasets that contain sensitive information. Therefore responsible usage and acknowledgment of potential biases are important. Additionally, the data still needs to be used according to the City of Chicago’s data terms and disclaimers.  
+
+
+**Census Dataset:**
 
 The original census dataset can be referenced in `OriginalDataset/ChicagoZipMedian.csv` and the cleaned version can be referenced in `CleanedDataset/final_household_df_cleaned.csv`.  The census dataset that was acquired directly from the U.S. Census Bureau S1901 Income in the Past 12 Months (in 2024 Inflation-Adjusted Dollars). It was manually filtered and selected by ZIP Code Tabulation Areas in Chicago (list of ZIP codes under Chicago is available on Google). Each column corresponded to a ZIP code under Chicago and the type of household (families, married couple, nonfamily household). Each row represents data for a specific ZIP code and household type, including the total number of households recorded. It shows the percentage of households that fall within various income brackets, ranging from `'Less than $10,000'` to `'$200,000 or more'` In addition, the dataset provides both the median income and mean income (in dollars) for each group. 
 There aren’t many strict legal barriers with this kind of dataset as it is directly acquired from the government. Despite this,  there are still some important ethical constraints to keep in mind. Since the project focuses on each ZIP code area, it has to be assured that the dataset won’t be used for bias and misrepresentation. This caution can prevent unintentionally reinforcing stereotypes about certain areas. 
 
-**Merged Dataset**: 
+**Merged Dataset:**
+
+The first merged dataset is stored at '/FinalDataset/merged_df.csv'. The dataset was merged on the Grocery Store Dataset using ZIP code as the key variable. To make analysis more straightforward, we decided to create a cleaned version of our merged dataset. This dataset is stored as '/FinalDataset/number_of_stores_grouped_by_median.csv'. This dataset only contains two columns
+
 
 ## Data Licenses and Terms of Use
 
@@ -73,6 +85,14 @@ To easily visualize the distribution of grocery stores across various median inc
 
 ## Finding 
 
+To further our analysis, we created two graphs that portrayed the relationship between ZIP codes and income levels. Through this, we were able to conclude that there is no clear or consistent relationship between the median income and grocery store access across Chicago neighborhoods. The first graph that we created was a histogram that visualizes the median household income by ZIP code. Income values ranged from approximately $30,000 to $150,000, with a majority of the grocery stores concentrated in the $50,000 to $80,0000 income range. We can also see that the median income with the most grocery stores is around $60,000 to $65,000. The distribution is skewed to the right, and there is no clear pattern. This graph reveals that there is a wide distribution of incomes throughout the city. While the middle-level incomes seem to have the most access to grocery stores, lower-income and higher-income areas also still have access to grocery stores. The spread of the data confirms that our dataset is capturing a broad and representative range of income levels with no strong relationship to the number of grocery stores present in the area. 
+
+The second graph that was created for analysis was a scatter plot comparing median household income in the Chicago land area and the number of grocery stores per ZIP code. This is a different way to visualize the data and the results of the combined dataset. It is a better representation of our dataset and a more direct way to calculate a linear regression. The x-axis represents income, and the y-axis represents the store count. Each plot point represents a ZIP code. If there were a strong relationship between income and the number of grocery stores, we would see a strong correlation and trend towards the right. However, the data points are very spread out and do not seem to have a relationship. The nonlinear pattern also reveals that every ZIP code generally has two to six grocery stores in its area, indicating that proximity to grocery stores is not affected by income. 
+
+The analysis of both graphs suggests that there is no strong relationship or predictor of grocery store distribution in Chicago. There may be some limitations in the data that could also affect the findings. For example, this dataset was mainly collected in 2020 during the pandemic and has not been continuously updated since then. Therefore, the dataset might be a poor representation of the actual number of grocery stores in Chicago since more establishments could have been opened or closed since then. Additionally, population density may also be a contributing factor. Higher areas of population may have more groceries, regardless of income levels. Realistically, it may make sense for urban planners to put more grocery stores where the demand is high. Factors such as transportation accessibility, historical developmental patterns, and urban planning can influence where grocery stores are built. Geographic constraints could also impact the results, as the geographic layouts of ZIP codes could influence the way that the number of grocery stores is recorded. Larger ZIP codes may naturally have a larger number of stores, disregarding how much income the population makes. Ultimately, people may live in one ZIP code and go to grocery stores. It may not accurately represent where people with certain incomes shop.
+
+Even though there was no direct correlation between income in certain ZIP codes and the amount of grocery stores, this project challenged our understanding of this topic. The results provided valuable insight into the complexity of food accessibility and urban planning. Food access can not solely be determined by one variable, yet it is a combination of multiple factors. A more comprehensive approach may be able to capture food equity and access in cities more accurately.  
+
 ## Future Work
 
 As mentioned above in the Findings section, this project highlighted that analyzing food accessibility through a single variable, such as median household income, may not be sufficient to capture the full picture we were originally trying to find. The findings demonstrated that the relationship is far more complex and not strongly correlated. Learning to avoid oversimplified assumptions when working with real world data and problems 
@@ -99,6 +119,21 @@ Beyond the data analysis itself, the project presented several technical challen
 
 ## Reproducing 
 
+Reproduce this project using the following steps: 
+
+1. Clone the project repository in the terminal
+   *git clone https://github.com/jlee938/JEAwesome.git 
+   *cd JEAwesome
+2. Make sure Python is installed and running
+3. Instal the required packages for the project. All the required packages are listed in /requirements.txt
+   */requirements.txt
+4. Check the OriginalDataset folder to ensure that the original files are in the folder.
+  *'/OriginalDataset/ChicagoZipMedian.csv'
+5. Run the full workflow using the command below
+   * '''python scrips/run_all.py'''
+6. Ensure that the datasets are present in the FinalDataset folder
+   * '/FinalDataset/merged_df.csv'
+   * '/FinalDataset/number_of_stores_grouped_by_median.csv'
 
 ## Reference
 U.S. Census Bureau. Income by Zip Code Tabulation Area. American Community Survey 5-Year Estimates 
@@ -116,3 +151,13 @@ U.S. Census Bureau. License Information and Disclaimer
 http://census.gov/data/software/x13as/disclaimer.html
 
 
+Chicago Data Portal. Grocery Store Status - Historical.
+
+https://data.cityofchicago.org/Health-Human-Services/Grocery-Store-Status-Historical/3e26-zek2/about_data
+
+
+Chicago Data Portal. Terms of Use.
+
+https://www.chicago.gov/city/en/narr/foia/data_disclaimer.html
+
+[Back to Top](# Grocery Store and Income Analysis)
