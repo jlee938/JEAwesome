@@ -19,7 +19,7 @@ grocery_df = pd.read_csv('grocery_data.csv')
 
 grocery_df
 
-income_df = pd.read_csv('ChicagoZipMedian.csv')
+income_df = pd.read_csv('OriginalDataset/ChicagoZipMedian.csv')
 income_df
 
 median_income_df = income_df[income_df['Label (Grouping)'] == 'Median income (dollars)']
