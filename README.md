@@ -12,6 +12,8 @@ Joyce:
   
 - Helped create data visualizations
 
+- Contributed to writing the final report
+
 Eric:
 
 - Obtain Census data
@@ -22,16 +24,18 @@ Eric:
 
 - Helped create data visualizations
 
-- Help create files to organize dataframes 
+- Help create files to organize dataframes
+
+- Contributed to writing the final report
 
 ## Summary
 
 ## Data Profile
 **Grocery Store Dataset:**
 
-For this project, the grocery store dataset is a tabular dataset retrieved by an api and stored as a dataframe. The final cleaned dataset is stored in '/CleanedDataset/grocery_df_cleaned.csv'. This dataset contains key information about grocery stores in the Chicago land area and its operation status. 
+For this project, the grocery store dataset is a tabular dataset retrieved by an api and stored as a dataframe. The final cleaned dataset is stored in `/CleanedDataset/grocery_df_cleaned.csv`. This dataset contains key information about grocery stores in the Chicago land area and its operation status. 
 
-Each row in the dataset represents a grocery store. There are six main attributes of this dataset: 'Store Name', 'Address', 'Zip', 'New status', 'Last updated', and 'Location'. The 'New status' attribute contains whether the grocery store is 'OPEN', 'CLOSED', or only takes 'ONLINE ORDERS ONLY'. This shows how easily accessible the grocery store is. The 'Last updated' column lists the date the dataset was last updated in month, date, year format. Similar to the 'Address' column, the 'Location' column includes where the grocery store is located. However, it contains the location as geographic coordinates (latitude and longitude). 
+Each row in the dataset represents a grocery store. There are six main attributes of this dataset: `Store Name`, `Address`, `Zip`, `New status`, `Last updated`, and `Location`. The `New status` attribute contains whether the grocery store is `OPEN`, `CLOSED`, or only takes `ONLINE ORDERS ONLY`. This shows how easily accessible the grocery store is. The `Last updated` column lists the date the dataset was last updated in month, date, year format. Similar to the `Address` column, the `Location` column includes where the grocery store is located. However, it contains the location as geographic coordinates (latitude and longitude). 
 
 The grocery store data set comes from the Chicago Data Portal and is a public dataset that can be easily accessed. The data set is owned by the Office of Emergency Management & Communications and was last updated on 6/13/25. The dataset period covers only 2020. The dataset is not being updated anymore, but is being kept for historical reference. 
 
@@ -45,7 +49,7 @@ There aren’t many strict legal barriers with this kind of dataset as it is dir
 
 **Merged Dataset:**
 
-The first merged dataset is stored at '/FinalDataset/merged_df.csv'. The dataset was merged on the Grocery Store Dataset using ZIP code as the key variable. To make analysis more straightforward, we decided to create a cleaned version of our merged dataset. This dataset is stored as '/FinalDataset/number_of_stores_grouped_by_median.csv'. This dataset only contains two columns
+The first merged dataset is stored at `/FinalDataset/merged_df.csv`. The dataset was merged on the Grocery Store Dataset using ZIP code as the key variable. This would allow us to compare income levels to the number of grocery stores based on different neighborhoods in Chicago. To make analysis more straightforward, we decided to create a cleaned version of our merged dataset. This dataset is stored as `/FinalDataset/number_of_stores_grouped_by_median.csv`. This dataset only contains two columns (`median_income` and `store_count`) and 54 observations that represent the zipcode. This was the main dataset used in our analysis and visuals we created for the project.
 
 
 ## Data Licenses and Terms of Use
@@ -83,7 +87,7 @@ After, `CleanedDataset/final_household_df_cleaned.csv` was merged onto `CleanedD
 
 To easily visualize the distribution of grocery stores across various median incomes, the merged_df.csv was grouped by `median_income`. This process involved aggregating the data to calculate store frequency within each income level, then the grouped dataset was sorted in ascending order of `median_income`. This new grouped dataset helped later portions of the project when it came to observing any changes between grocery store frequency and median income level and creating visualizations. The grouped dataset can be located in `FinalDataset/number_of_stores_grouped_by_median.csv`. 
 
-## Finding 
+## Findings
 
 To further our analysis, we created two graphs that portrayed the relationship between ZIP codes and income levels. Through this, we were able to conclude that there is no clear or consistent relationship between the median income and grocery store access across Chicago neighborhoods. The first graph that we created was a histogram that visualizes the median household income by ZIP code. Income values ranged from approximately $30,000 to $150,000, with a majority of the grocery stores concentrated in the $50,000 to $80,0000 income range. We can also see that the median income with the most grocery stores is around $60,000 to $65,000. The distribution is skewed to the right, and there is no clear pattern. This graph reveals that there is a wide distribution of incomes throughout the city. While the middle-level incomes seem to have the most access to grocery stores, lower-income and higher-income areas also still have access to grocery stores. The spread of the data confirms that our dataset is capturing a broad and representative range of income levels with no strong relationship to the number of grocery stores present in the area. 
 
@@ -99,7 +103,7 @@ As mentioned above in the Findings section, this project highlighted that analyz
 
 This project also highlighted several key principles learned in the IS 477 course. Specifically, the Data Quality Dimension module emphasized their true implication when implementing or creating a dataset. It also served as a reminder of the usefulness and utility of APIs. For the longest time, API’s were not something valued when obtaining datasets online. Before, the decision was always to download a CSV file manually or scrap a dataset using BeautifulSoup if a downloading option was not available. This project taught that APIs are crucial when a project requires the most up to date results and to meet the Data Quality Dimension: Timeliness and Accuracy. Furthermore, the increased timeliness and results using API, in turn, can significantly increase the accuracy of the analysis. 
 
-Based  on the lessons learned from the project, it was learned that the Data Quality Dimensions are, “moderately, codependent.” As the census dataset lacked timeliness, it was learned that this could also impact the final merged dataset and the final analysis accuracy. A census dataset that is updated every decade lacks timeliness and in return might reflect inaccurate median income results when the analysis or dataset is used to represent current conditions. 
+Based on the lessons learned from the project, it was learned that the Data Quality Dimensions are, “moderately, codependent.” As the census dataset lacked timeliness, it was learned that this could also impact the final merged dataset and the final analysis accuracy. A census dataset that is updated every decade lacks timeliness and in return might reflect inaccurate median income results when the analysis or dataset is used to represent current conditions. 
 
 Several precautions could be taken in the future in order to improve the project. One key refinement would be integrating a comprehensive Chicago median income dataset that offers annual, non-estimated updates and reporting contrary to the dataset acquired from census. As discussed in the Data Quality section and previous paragraph, the final merged dataset lacked heavily when it comes to timeliness. This problem mainly stemmed from the fact that one of the dataset used is updated every decade. For this reason it was also concluded that API will not be utilized for acquiring the census data as it isn’t often updated. If there were an alternative dataset that provided timely updates on the median income of each Chicago ZIP code area, it could improve the final merged dataset’s timeliness and accuracy, resulting in a better overall analysis that is more representative of current conditions. The same could be implied for the Grocery Dataset, as it wasn’t updated since last year. Using an alternative dataset that is updated more timely could have yielded better results. 
 
@@ -128,12 +132,12 @@ Reproduce this project using the following steps:
 3. Instal the required packages for the project. All the required packages are listed in /requirements.txt
    */requirements.txt
 4. Check the OriginalDataset folder to ensure that the original files are in the folder.
-  *'/OriginalDataset/ChicagoZipMedian.csv'
+  *`/OriginalDataset/ChicagoZipMedian.csv`
 5. Run the full workflow using the command below
    * '''python scrips/run_all.py'''
 6. Ensure that the datasets are present in the FinalDataset folder
-   * '/FinalDataset/merged_df.csv'
-   * '/FinalDataset/number_of_stores_grouped_by_median.csv'
+   * `/FinalDataset/merged_df.csv`
+   * `/FinalDataset/number_of_stores_grouped_by_median.csv`
 
 ## Reference
 U.S. Census Bureau. Income by Zip Code Tabulation Area. American Community Survey 5-Year Estimates 
