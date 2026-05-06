@@ -135,6 +135,7 @@ Reproduce this project using the following steps:
 2. Make sure Python is installed and running
 3. Instal the required packages for the project. All the required packages are listed in /requirements.txt.
     * ```/requirements.txt```
+    * ```/pip install -r requirements.txt```
 4. Check the OriginalDataset folder to ensure that the original files are in the folder.
     * `/OriginalDataset/ChicagoZipMedian.csv`
 5. Run the full workflow using the command below.
