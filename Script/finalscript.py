@@ -69,11 +69,19 @@ income_group_df = merged_df.groupby('median_income').size().reset_index(name='st
 income_group_df = income_group_df.sort_values('median_income')
 income_group_df
 
+import os
+
+Artifacts = "artifacts"
+os.makedirs(Artifacts, exist_ok=True)
+
+graph1 = "income_distribution.png"
+graph2 = "income_vs_storecount.png"
+
 import matplotlib.pyplot as plt
 plt.figure(figsize=(10, 6))
 plt.hist(merged_df['median_income'].dropna(), bins=20, color='blue', edgecolor='black')
 plt.xlabel('Median Income')
-plt.ylabel('Frequency Of Resturuant')
+plt.ylabel('Frequency of Restauruant')
 plt.title('Distribution of Median Income')
 save_path = os.path.join(Artifacts, graph1)
 plt.savefig(save_path)
