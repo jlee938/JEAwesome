@@ -4,6 +4,7 @@ import hashlib
 from pathlib import Path
 import gzip
 import io
+import os
 
 grocery_url = "https://data.cityofchicago.org/resource/3e26-zek2.csv"
 
@@ -94,8 +95,6 @@ save_path = os.path.join(Artifacts, graph2)
 plt.savefig(save_path)
 
 plt.show()
-
-import os
 
 print(os.listdir())
 
