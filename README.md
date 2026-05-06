@@ -85,7 +85,7 @@ Several precautions could be taken in the future in order to improve the project
 
 One other change that can be made in the future is to consider additional variables than just “income median” and area. There are many factors and nuances outside of income that might lead to food insecurity and lack of grocery store accessibility. Some factors might include, population density, transportation access, store size, and distance to the nearest grocery store. Moving beyond ZIP codes and median incomes and considering these factors may yield better insights on food insecurity and grocery store accessibility. 
 
-Finally, it is aimed to assign appropriate ZIP code and median income values to the Walmart entry with missing variables. Given its proximity and potential relevance to the Chicago area, identifying a justifiable ZIP code and corresponding median income would allow for its inclusion in the analysis while maintaining consistency. 
+Finally, one thing that could be changed in the future, is to assign appropriate ZIP code and median income values to the Walmart entry with missing variables. Given its proximity and potential relevance to the Chicago area, identifying a justifiable ZIP code and corresponding median income would allow for its inclusion in the analysis while maintaining consistency. 
 
 ## Challenges
 
