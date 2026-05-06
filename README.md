@@ -3,17 +3,26 @@
 ## Contribution
 
 Joyce:
-Obtain Grocery dataset
-Cleaning Grocery dataset
-Helped merge two datasets
-Helped create data visualizations
+
+- Obtain Grocery dataset
+  
+- Cleaning Grocery dataset
+  
+- Helped merge two datasets
+  
+- Helped create data visualizations
 
 Eric:
-Obtain Census data
-Cleaning Census data
-Helped merge two datasets
-Helped create data visualizations
-Help create files to organize dataframes 
+
+- Obtain Census data
+  
+- Cleaning Census data
+
+- Helped merge two datasets
+
+- Helped create data visualizations
+
+- Help create files to organize dataframes 
 
 ## Summary
 
