@@ -21,6 +21,7 @@ Help create files to organize dataframes
 **Grocery Store Dataset**
 
 **Census Dataset**
+
 The original census dataset can be referenced in OriginalDataset/ChicagoZipMedian.csv and the cleaned version can be referenced in CleanedDataset/final_household_df_cleaned.csv.  The census dataset that was acquired directly from the U.S. Census Bureau S1901 Income in the Past 12 Months (in 2024 Inflation-Adjusted Dollars). It was manually filtered and selected by ZIP Code Tabulation Areas in Chicago (list of ZIP codes under Chicago is available on Google). Each column corresponded to a ZIP code under Chicago and the type of household (families, married couple, nonfamily household). Each row represents data for a specific ZIP code and household type, including the total number of households recorded. It shows the percentage of households that fall within various income brackets, ranging from 'Less than $10,000' to '$200,000 or more' In addition, the dataset provides both the median income and mean income (in dollars) for each group. 
 There aren’t many strict legal barriers with this kind of dataset as it is directly acquired from the government. Despite this,  there are still some important ethical constraints to keep in mind. Since the project focuses on each ZIP code area, it has to be assured that the dataset won’t be used for bias and misrepresentation. This caution can prevent unintentionally reinforcing stereotypes about certain areas. 
 
