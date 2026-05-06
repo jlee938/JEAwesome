@@ -147,7 +147,7 @@ Reproduce this project using the following steps:
     * `Figure_1.png`
     * `Figure_2.png`
 
-## Reference
+## References
 U.S. Census Bureau. Income by Zip Code Tabulation Area. American Community Survey 5-Year Estimates 
 
 https://data.census.gov/chart?q=Income+by+Zip+code+tabulation+area&g=050XX00US17031_860XX00US
