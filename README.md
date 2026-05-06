@@ -128,11 +128,11 @@ Beyond the data analysis itself, the project presented several technical challen
 Reproduce this project using the following steps: 
 
 1. Clone the project repository in the terminal
-    *git clone https://github.com/jlee938/JEAwesome.git 
-    *cd JEAwesome
+    * git clone https://github.com/jlee938/JEAwesome.git 
+    * cd JEAwesome
 2. Make sure Python is installed and running
 3. Instal the required packages for the project. All the required packages are listed in /requirements.txt
-    */requirements.txt
+    * /requirements.txt
 4. Check the OriginalDataset folder to ensure that the original files are in the folder.
     *`/OriginalDataset/ChicagoZipMedian.csv`
 5. Run the full workflow using the command below
@@ -166,4 +166,4 @@ Chicago Data Portal. Terms of Use.
 
 https://www.chicago.gov/city/en/narr/foia/data_disclaimer.html
 
-[Back to Top](# Grocery Store and Income Analysis)
+[Back to Top](#Grocery-Store-and-Income-Analysis)
