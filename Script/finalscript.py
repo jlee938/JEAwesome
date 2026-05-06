@@ -74,6 +74,9 @@ plt.hist(merged_df['median_income'].dropna(), bins=20, color='blue', edgecolor='
 plt.xlabel('Median Income')
 plt.ylabel('Frequency Of Resturuant')
 plt.title('Distribution of Median Income')
+save_path = os.path.join(Artifacts, graph1)
+plt.savefig(save_path)
+
 plt.show()
 
 import matplotlib.pyplot as plt
@@ -87,6 +90,8 @@ plt.title('Relationship Between Median Income and Store Count')
 plt.xlabel('Median Household Income (USD)')
 plt.ylabel('Number of Stores')
 plt.grid(True, linestyle='--', alpha=0.5)
+save_path = os.path.join(Artifacts, graph2)
+plt.savefig(save_path)
 
 plt.show()
 
