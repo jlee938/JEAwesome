@@ -133,15 +133,18 @@ Reproduce this project using the following steps:
     * ```git clone https://github.com/jlee938/JEAwesome.git``` 
     * ```cd JEAwesome```
 2. Make sure Python is installed and running
-3. Instal the required packages for the project. All the required packages are listed in /requirements.txt
+3. Instal the required packages for the project. All the required packages are listed in /requirements.txt.
     * ```/requirements.txt```
 4. Check the OriginalDataset folder to ensure that the original files are in the folder.
     * `/OriginalDataset/ChicagoZipMedian.csv`
-5. Run the full workflow using the command below
+5. Run the full workflow using the command below.
     * ```python scrips/run_all.py```
-6. Ensure that the datasets are present in the FinalDataset folder
+6. Ensure that the datasets are present in the FinalDataset folder.
     * `/FinalDataset/merged_df.csv`
     * `/FinalDataset/number_of_stores_grouped_by_median.csv`
+7. Check if graphs were saved to `Artifacts` folder.
+    * `Figure_1.png`
+    * `Figure_2.png`
 
 ## Reference
 U.S. Census Bureau. Income by Zip Code Tabulation Area. American Community Survey 5-Year Estimates 
